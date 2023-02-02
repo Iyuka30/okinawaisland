@@ -1,8 +1,9 @@
+/*見出し*/
 h1{
     color: aqua;
 }
 
-
+/*tab写真*/
 .box{
     width: 100%;
     height: 100%;
@@ -21,11 +22,20 @@ h1{
   }
   
   #box1{
-    background-color: turquoise;
+    background-image:url(./honntou1.jpg);
   }
   #box2{
     background-color: rgb(150, 121, 204);
   }
   #box3{
+    background-color: rgb(64, 224, 131);
+  }
+  #box4{
+    
+  }
+  #box5{
+    background-color: rgb(150, 121, 204);
+  }
+  #box6{
     background-color: rgb(64, 224, 131);
   }
