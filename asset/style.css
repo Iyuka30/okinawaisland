@@ -4,7 +4,31 @@ h1{
 }
 
 /*tab写真*/
-.box{
+/*Q2 */
+.tab-list{
+    display: flex;
+  }
+  
+  .tab-list li{
+    padding: 10px;
+    background-color: violet;
+    border: solid 1px #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .tab-list li:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .container{
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+  
+  .box{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -22,7 +46,7 @@ h1{
   }
   
   #box1{
-    background-image:url(./honntou1.jpg);
+    background-color: turquoise;
   }
   #box2{
     background-color: rgb(150, 121, 204);
@@ -30,8 +54,9 @@ h1{
   #box3{
     background-color: rgb(64, 224, 131);
   }
+
   #box4{
-    
+    background-color: turquoise;
   }
   #box5{
     background-color: rgb(150, 121, 204);
@@ -39,3 +64,5 @@ h1{
   #box6{
     background-color: rgb(64, 224, 131);
   }
+  
+ 
