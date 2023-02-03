@@ -2,13 +2,6 @@
 $(function(){
 
   //tabのpic表示
-  $(".tab-list li").on("click",function(){
-    let id = $(this).attr("id");
-    console.log(id);
-    $(".box").removeClass("current");
-    $(id).addClass("current");
-
-  })
   // $(".tab-list li").on("click", function () {
   //   let id = $(this).attr("id"); //attra(classとかtypeとかdiv)
   //   console.log($(this).attr("id"));
@@ -21,7 +14,7 @@ $(function(){
     console.log(this);
   })
 
-  // コメント入力したときadd押すと次のサイトに飛べる
+  // コメントボタン押すと次のサイトに飛べる
 
   $("#hontou").on("click", function () {
     console.log($("#hontou"));
