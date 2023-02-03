@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>okinawa</title>
   <link rel="stylesheet" href="./asset/style.css">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  <h1> okinawa island</h1>
+  <h1> Okinawa Island</h1>
+  <section>
+    <div>
+      <p></p>
+      <p></p>
 
-     <div>
-        <p></p>
-        <p></p>
+      <br>
+      <dl class="island-menu">
+        <dt id="island">沖縄</dt>
+        <dd>沖縄本島</dd>
+        <dd>久米島</dd>
+        <dd>宮古島</dd>
+        <dd>石垣島</dd>
+        <dd>西表島</dd>
+        <dd>与那国島</dd>
 
-        <br>
-        <dl class="island-menu">
-          <dt id="island">沖縄</dt>
-          <dd>沖縄本島</dd>
-          <dd>久米島</dd>
-          <dd>宮古島</dd>
-          <dd>石垣島</dd>
-          <dd>西表島</dd>
-          <dd>与那国島</dd>
-         
-        </dl>
-      </div>
+      </dl>
+    </div>
+  </section>
 
-    <section>
-    <h1>沖縄おすすめ</h1>
+  <section>
+    <h2>沖縄おすすめ</h2>
     <ul class="tab-list">
       <li id="#box1">沖縄本島</li>
       <li id="#box2">久米島</li>
@@ -39,23 +46,24 @@
       <li id="#box6">与那国島</li>
     </ul>
     <div class="container">
-      <div class="box" id="沖縄本島"></div>
-      <div class="box" id="久米島"></div>
-      <div class="box" id="宮古島"></div>
-      <div class="box" id="石垣島"></div>
-      <div class="box" id="西表島"></div>
-      <div class="box" id="与那国島"></div>
+      <div class="box current" id="#box1"></div>
+      <div class="box" id="#box2"></div>
+      <div class="box" id="#box3"></div>
+      <div class="box" id="#box4"></div>
+      <div class="box" id="#box5"></div>
+      <div class="box" id="#box6"></div>
     </div>
   </section>
 
   <section>
-  
+
     <button>
-      <a class="go-top-btn">topに戻る</a>
-    </button>
+      <a class="go-top-btn">topに戻る</a></button>
   </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="./jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="./asset/script.js"></script>
 </body>
+
 </html>
