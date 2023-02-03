@@ -43,7 +43,6 @@ h1{
   }
   
   .box::after{
-    content: 'コンテンツ内容';
     position: absolute;
     font-size: 40px;
     top: 50%;
