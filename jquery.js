@@ -1,7 +1,13 @@
 
 $(function(){
+  
+  $(".tab-list li").on("click",function(){
+    let id = $(this).attr("id");
+    console.log(id);
+    $(".box").removeClass("current");
+    $(id).addClass("current");
 
-
+  })
 
   // island-menu アコーディオン
   $("#island").on("click",function(){
