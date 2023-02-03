@@ -39,3 +39,26 @@ h1{
   #box6{
     background-color: rgb(64, 224, 131);
   }
+
+/* island-menu */
+.island-menu dt{
+  margin: 0 auto;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.island-menu dd{
+  display: none;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+}
