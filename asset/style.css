@@ -146,4 +146,10 @@ h2{
   margin-bottom: 30px;
 }
 
-
+/* butoon ボタンまでスクロールされたら表示 */
+.button{
+  transition: all 4s ease;
+}
+.button.hide{
+  opacity: 0;
+}

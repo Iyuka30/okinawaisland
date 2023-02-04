@@ -51,6 +51,19 @@ $(function(){
   $(".go-top-btn").on("click",function(){
     $("body,html").animate({scrollTop:0},500);
   })  
+  /* butoon ボタンまでスクロールされたら表示 */
+  $(window).on("scroll",function(){
+    let button = $(".button").offset().top; //button座標取得
+    // console.log(button.top);
+    let wh = $(window).height(); //画面の高さを取得
+    // console.log(wh);
+    let position = $(window).scrollTop(); //現在地の座標取得
+    // console.log(position);
+    if(button <= position + wh){
+      $(".button").removeClass("hide");
+    }
+  })
+
 
 
 })//最後
