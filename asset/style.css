@@ -124,14 +124,14 @@ h2{
   font-weight: 500;
 }
 .button a::before {
-content: '';
-position: absolute;
-top: -5px;
-left: -5px;
-width: calc(100% - 4px);
-height: calc(100% - 4px);
-border: 2px solid #6bb6ff;
-transition: 0.2s;
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #6bb6ff;
+  transition: 0.2s;
 }
 .button a:hover::before {
   top: 0;
@@ -139,8 +139,8 @@ transition: 0.2s;
 }
   
 .button a:hover {
-text-decoration: none;
-background-color: #b3d9ff;
+  text-decoration: none;
+  background-color: #b3d9ff;
 }
 .button{
   margin-bottom: 30px;

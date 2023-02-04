@@ -1,6 +1,7 @@
 
 $(function(){
   
+  // tab-list
   $(".tab-list li").on("click",function(){
     let id = $(this).attr("id");
     console.log(id);
