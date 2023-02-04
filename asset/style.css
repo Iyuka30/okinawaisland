@@ -109,8 +109,41 @@ h2{
   cursor: pointer;
 }
 
-
-button{
-  width: 200px;
-
+/* butto トップへ戻る */
+.button a{
+  background: #eee;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 150px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
 }
+.button a::before {
+content: '';
+position: absolute;
+top: -5px;
+left: -5px;
+width: calc(100% - 4px);
+height: calc(100% - 4px);
+border: 2px solid #6bb6ff;
+transition: 0.2s;
+}
+.button a:hover::before {
+  top: 0;
+  left: 0;
+}
+  
+.button a:hover {
+text-decoration: none;
+background-color: #b3d9ff;
+}
+.button{
+  margin-bottom: 30px;
+}
+
+
