@@ -108,6 +108,11 @@ h2{
   cursor: pointer;
 }
 
+/*ボタン*/
+
+section3{
+  text-align: center;
+}
 
 button{
   width: 200px;
