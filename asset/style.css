@@ -1,42 +1,49 @@
-
-
 /*見出し*/
-h1{
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: 0.3em;
-    color: aqua;
-    font-family: 'Space Grotesk', sans-serif;
+h1 {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  color: rgb(58, 171, 210);
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-section1{
+section1 {
   padding: 50px;
   text-align: center;
 }
 
-h2{
-  text-align: center;
 
+
+h2 {
+  text-align: center;
+  margin: 50px;
+  letter-spacing: 0.5em;
 }
 
 /*tab写真*/
-.tab-list{
+.tab-list {
   display: flex;
-  list-style:none;
-
+  list-style: none;
+  margin: 0;
 }
-.tab-list li{
+
+.tab-list li {
   padding: 10px;
-  background-color: aqua;
-  border: 1px solid white;
+  /*background-color: aqua;*/
+  border: 1px solid black;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.tab-list :hover{
+
+
+
+
+.tab-list :hover {
   opacity: 0.7;
   cursor: pointer;
 }
-.container{
+
+.container {
   width: 100%;
   height: 600px;
   position: relative;
@@ -44,7 +51,7 @@ h2{
 
 }
 
-.box{
+.box {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -53,68 +60,125 @@ h2{
 }
 
 
-.box::after{
+.box::after {
   position: absolute;
   font-size: 40px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   height: 600px;
 }
-#box1{
-  background-color: aqua;
-}
-#box2{
-  background-color: rgb(150, 121, 204);
-}
-#box3{
-  background-color: rgb(64, 224, 131);
-}
-#box4{
-  background-color: aqua;
-}
-#box5{
-  background-color: rgb(150, 121, 204);
-}
-#box6{
-  background-color: rgb(64, 224, 131);
+
+#box1 {
+  background-color: rgba(0, 128, 0, 0.357);
 }
 
-.current{
+#box2 {
+  background-color: bisque;
+}
+
+#box3 {
+  background-color: rgb(58, 171, 210);
+}
+
+#box4 {
+  background-color: rgba(0, 128, 0, 0.357);
+}
+
+
+#box5 {
+  background-color: bisque;
+}
+
+#box6 {
+  background-color: rgb(58, 171, 210);
+}
+
+.current {
   z-index: 1;
   opacity: 1;
 }
 
 /* island-menu */
-.island-menu dt{
+.island-menu dt {
   margin: 0 auto;
-  width: 120px;
+  width: 200px;
   line-height: 40px;
   text-align: center;
-  background-color: black;
+  background-color: white;
   color: white;
   cursor: pointer;
+
 }
-.island-menu dd{
+
+
+.island-menu dd {
   display: none;
   margin: 0 auto;
   background-color: white;
   border: 1px solid black;
   box-sizing: border-box;
-  width: 120px;
+  width: 200px;
   line-height: 40px;
   text-align: center;
   color: black;
   cursor: pointer;
 }
 
+
 /*ボタン*/
 
-section3{
+section3 {
   text-align: center;
-}
 
-button{
-  width: 200px;
+  /* butto トップへ戻る */
+  .button a {
+    background: #eee;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 150px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+  }
 
+  .button a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #6bb6ff;
+    transition: 0.2s;
+  }
+
+  .button a:hover::before {
+    top: 0;
+    left: 0;
+  }
+
+  .button a:hover {
+    text-decoration: none;
+    background-color: #b3d9ff;
+  }
+
+  .button {
+    margin-bottom: 30px;
+
+  }
+
+
+  /* butoon ボタンまでスクロールされたら表示 */
+  .button {
+    transition: all 4s ease;
+  }
+
+  .button.hide {
+    opacity: 0;
+  }
 }
