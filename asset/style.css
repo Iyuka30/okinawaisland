@@ -29,7 +29,7 @@ h2 {
 
 .tab-list li {
   padding: 10px;
-  /*background-color: aqua;*/
+  /* background-color: aqua; */
   border: 1px solid black;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -74,6 +74,7 @@ h2 {
 }
 
 #box2 {
+
   background-color: bisque;
 }
 
@@ -126,11 +127,10 @@ h2 {
 }
 
 
-/* butto トップへ戻る */
+/* button デザイン */
 a.btn {
   display: block;
   text-align: center;
-  vertical-align: middle;
   text-decoration: none;
   width: 80px;
   margin: auto;
@@ -150,12 +150,12 @@ a.btn:hover {
   background: #27acd9;
 }
 
-/* butoon ボタンまでスクロールされたら表示 */
+/* button ボタンまでスクロールされたら表示 */
 a.btn {
   transition: all 4s ease;
 }
 
 a.btn.hide {
   opacity: 0;
-  }
+}
 

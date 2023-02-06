@@ -51,7 +51,7 @@ $(function(){
   $(".btn").on("click",function(){
     $("body,html").animate({scrollTop:0},500);
   })  
-  /* butoon ボタンまでスクロールされたら表示 */
+  /* button ボタンまでスクロールされたら表示 */
   $(window).on("scroll",function(){
     let button = $("section3").offset().top; 
     // console.log(button.top);
