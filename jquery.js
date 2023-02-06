@@ -48,19 +48,19 @@ $(function(){
   })
 
   // button トップへ戻る
-  $(".go-top-btn").on("click",function(){
+  $(".btn").on("click",function(){
     $("body,html").animate({scrollTop:0},500);
   })  
   /* butoon ボタンまでスクロールされたら表示 */
   $(window).on("scroll",function(){
-    let button = $(".button").offset().top; //button座標取得
+    let button = $("section3").offset().top; 
     // console.log(button.top);
-    let wh = $(window).height(); //画面の高さを取得
+    let wh = $(window).height(); 
     // console.log(wh);
-    let position = $(window).scrollTop(); //現在地の座標取得
+    let position = $(window).scrollTop(); 
     // console.log(position);
     if(button <= position + wh){
-      $(".button").removeClass("hide");
+      $(".btn").removeClass("hide");
     }
   })
 

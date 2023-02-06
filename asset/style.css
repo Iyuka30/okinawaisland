@@ -126,59 +126,36 @@ h2 {
 }
 
 
-/*ボタン*/
-
-section3 {
+/* butto トップへ戻る */
+a.btn {
+  display: block;
   text-align: center;
-
-  /* butto トップへ戻る */
-  .button a {
-    background: #eee;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 150px;
-    padding: 10px 25px;
-    color: #313131;
-    transition: 0.3s ease-in-out;
-    font-weight: 500;
-  }
-
-  .button a::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
-    border: 2px solid #6bb6ff;
-    transition: 0.2s;
-  }
-
-  .button a:hover::before {
-    top: 0;
-    left: 0;
-  }
-
-  .button a:hover {
-    text-decoration: none;
-    background-color: #b3d9ff;
-  }
-
-  .button {
-    margin-bottom: 30px;
-
-  }
-
-
-  /* butoon ボタンまでスクロールされたら表示 */
-  .button {
-    transition: all 4s ease;
-  }
-
-  .button.hide {
-    opacity: 0;
-  }
+  vertical-align: middle;
+  text-decoration: none;
+  width: 80px;
+  margin: auto;
+  padding: 7px 50px;
+  font-weight: bold;
+  border: 2px solid black;
+  color: black;
+  transition: 0.5s;
+  font-family: 'Caveat Brush';
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
+
+a.btn:hover {
+  color: black;
+  background: #27acd9;
+}
+
+/* butoon ボタンまでスクロールされたら表示 */
+a.btn {
+  transition: all 4s ease;
+}
+
+a.btn.hide {
+  opacity: 0;
+  }
+
